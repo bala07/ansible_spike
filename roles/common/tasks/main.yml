@@ -1,0 +1,11 @@
+---
+- name: create the releases directory
+  sudo: yes
+  sudo_user: balasubn
+  file: path=/site/releases state=directory
+
+- name: create the dummy common file
+  sudo: yes
+  sudo_user: balasubn
+  file: path=/site/releases/common.txt state=touch
+

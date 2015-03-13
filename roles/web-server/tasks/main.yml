@@ -1,0 +1,7 @@
+---
+- name: create the web-server directory
+  file: path=/site/releases/web-server state=directory
+
+- name: create a dummy web-server file
+  file: path=/site/releases/web-server/dummy-web-server.txt state=touch
+
