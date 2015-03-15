@@ -1,0 +1,6 @@
+---
+- name: create the db-server directory
+  file: path=/site/releases/db-server state=directory
+
+- name: create a dummy db-server file
+  file: path=/site/releases/db-server/dummy-db-server.txt state=touch

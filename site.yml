@@ -1,3 +1,4 @@
 ---
  - include: web-servers.yml
+ - include: db-servers.yml
 
